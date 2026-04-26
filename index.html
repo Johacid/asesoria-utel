@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Martinez | Asesor Educativo Utel</title>
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2300b140%22/><text x=%2250%22 y=%2272%22 font-family=%22Arial, sans-serif%22 font-size=%2265%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>U</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%2300b140%22/><text x=%2250%22 y=%2272%22 font-family=%22Arial, sans-serif%22 font-size=%2265%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>U</text></svg>">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,7 +81,7 @@
     <nav class="fixed w-full z-40 backdrop-blur-md bg-white/70 dark:bg-darkBg/80 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded bg-utel flex items-center justify-center text-white font-heading font-bold text-sm">U</div>
+                <div class="w-8 h-8 rounded-full bg-utel flex items-center justify-center text-white font-heading font-bold text-sm">U</div>
                 <span class="font-heading font-semibold text-gray-900 dark:text-white text-lg tracking-tight">Erick Martinez</span>
             </div>
             <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none">
@@ -654,7 +654,8 @@
         document.body.addEventListener('click', function(e) {
             if (e.target.closest('.trigger-inscripcion')) {
                 
-                // NUEVA LÍNEA: Cerrar forzosamente los modales académicos si están abiertos y resetear su opacidad
+                // --- SOLUCIÓN AL ERROR DE VENTANAS APILADAS ---
+                // Cerrar forzosamente los modales académicos si están abiertos y resetear su opacidad
                 ['licenciaturas', 'maestrias'].forEach(id => {
                     document.getElementById('modal-' + id).classList.add('hidden');
                     document.getElementById('backdrop-' + id).classList.add('opacity-0');
@@ -681,7 +682,7 @@
             // ATENCIÓN ERICK: CAMBIA ESTE NÚMERO
             // Pon tu número real con el código 52 (ej. 525512345678)
             // ==========================================
-            const numeroWhatsapp = "525647090676"; 
+            const numeroWhatsapp = "525500000000"; 
             
             const mensaje = `Hola Erick, quiero iniciar mi inscripción. Mis datos son:%0A%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Correo:* ${correo}%0A%0A¡Quedo a la espera de tu mensaje para mi matrícula!`;
             
