@@ -81,8 +81,10 @@
     <nav class="fixed w-full z-40 backdrop-blur-md bg-white/70 dark:bg-darkBg/80 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-full bg-utel flex items-center justify-center text-white font-heading font-bold text-sm">U</div>
-                <span class="font-heading font-semibold text-gray-900 dark:text-white text-lg tracking-tight">Erick Martinez</span>
+                <a href="https://utel.edu.mx/" target="_blank" class="flex items-center gap-2 group transition-all">
+                    <div class="w-8 h-8 rounded-full bg-utel flex items-center justify-center text-white font-heading font-bold text-sm transition-transform group-hover:scale-110">U</div>
+                    <span class="font-heading font-semibold text-gray-900 dark:text-white text-lg tracking-tight group-hover:text-utel transition-colors">Erick Martinez</span>
+                </a>
             </div>
             <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none">
                 <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-gray-400 hover:text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
@@ -177,7 +179,7 @@
                         <h3 class="text-2xl font-heading font-bold text-white mb-2 group-hover:text-utel transition-colors">Maestrías</h3>
                         <p class="text-gray-400 text-sm">Especialízate y da el siguiente gran paso. <span class="font-medium underline decoration-gray-600 underline-offset-2">Ver posgrados</span></p>
                     </div>
-                    <div class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center group-hover:bg-utel group-hover:border-utel text-white transition-all">
+                    <div class="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center group-hover:bg-utel group-hover:border-utel text-white transition-all">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
                     </div>
                 </div>
@@ -353,7 +355,6 @@
                             </button>
                         </div>
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">Déjame tus datos principales para agilizar tu matrícula. Te contactaré de inmediato por WhatsApp.</p>
-
                         <form id="form-inscripcion" class="space-y-4">
                             <div>
                                 <label for="nombre" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nombre completo</label>
@@ -389,7 +390,7 @@
                         <div class="flex justify-between items-center mb-6">
                             <h3 class="text-2xl font-heading font-bold text-gray-900 dark:text-white">Oferta Académica: Licenciaturas</h3>
                             <button id="btn-close-licenciaturas" class="text-gray-400 hover:text-gray-500 focus:outline-none">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                             </button>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -417,16 +418,7 @@
                                     <div class="w-2 h-2 rounded-full bg-utel"></div><h4 class="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Económico Administrativo</h4>
                                 </div>
                                 <ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1.5 pl-4 list-disc marker:text-gray-300 dark:marker:text-gray-700 grid grid-cols-1 sm:grid-cols-2 gap-x-2">
-                                    <li>Administración y Finanzas</li>
-                                    <li>Administración</li>
-                                    <li>Administración de Recursos Humanos</li>
-                                    <li>Administración de Tecnologías de Información</li>
-                                    <li>Contaduría Pública</li>
-                                    <li>Contaduría y Finanzas</li>
-                                    <li>Mercadotecnia</li>
-                                    <li>Negocios Internacionales</li>
-                                    <li>Administración de Ventas</li>
-                                    <li>Economía y Finanzas</li>
+                                    <li>Administración y Finanzas</li><li>Administración</li><li>Administración de Recursos Humanos</li><li>Administración de Tecnologías de Información</li><li>Contaduría Pública</li><li>Contaduría y Finanzas</li><li>Mercadotecnia</li><li>Negocios Internacionales</li><li>Administración de Ventas</li><li>Economía y Finanzas</li>
                                 </ul>
                             </div>
                             <div class="p-5 rounded-2xl bg-gray-50 dark:bg-[#1A1A1A] border border-gray-100 dark:border-gray-800 h-full">
@@ -434,17 +426,7 @@
                                     <div class="w-2 h-2 rounded-full bg-utel"></div><h4 class="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Ciencias Sociales y Humanidades</h4>
                                 </div>
                                 <ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1.5 pl-4 list-disc marker:text-gray-300 dark:marker:text-gray-700 grid grid-cols-1 sm:grid-cols-2 gap-x-2">
-                                    <li>Ciencias Políticas y Admin. Pública</li>
-                                    <li>Criminología y Criminalística</li>
-                                    <li>Comunicación Organizacional</li>
-                                    <li>Comunicación Digital</li>
-                                    <li>Comunicación</li>
-                                    <li>Derecho Internacional</li>
-                                    <li>Derecho Empresarial</li>
-                                    <li>Derecho</li>
-                                    <li>Psicología Organizacional</li>
-                                    <li>Pedagogía</li>
-                                    <li>Tecnología Educativa</li>
+                                    <li>Ciencias Políticas y Admin. Pública</li><li>Criminología y Criminalística</li><li>Comunicación Organizacional</li><li>Comunicación Digital</li><li>Comunicación</li><li>Derecho Internacional</li><li>Derecho Empresarial</li><li>Derecho</li><li>Psicología Organizacional</li><li>Pedagogía</li><li>Tecnología Educativa</li>
                                 </ul>
                             </div>
                         </div>
@@ -466,7 +448,7 @@
                         <div class="flex justify-between items-center mb-6">
                             <h3 class="text-2xl font-heading font-bold text-gray-900 dark:text-white">Oferta Académica: Maestrías</h3>
                             <button id="btn-close-maestrias" class="text-gray-400 hover:text-gray-500 focus:outline-none">
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
                             </button>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -475,11 +457,7 @@
                                     <div class="w-2 h-2 rounded-full bg-utel"></div><h4 class="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Ingeniería</h4>
                                 </div>
                                 <ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1.5 pl-4 list-disc marker:text-gray-300 dark:marker:text-gray-700">
-                                    <li>Ciencia de Datos para Negocios</li>
-                                    <li>Ingeniería y Tecnología Ambiental</li>
-                                    <li>Dirección de Proyectos de Innovación</li>
-                                    <li>Dirección e Ingeniería de Software</li>
-                                    <li>Ciencias Computacionales y Telecomunicaciones</li>
+                                    <li>Ciencia de Datos para Negocios</li><li>Ingeniería y Tecnología Ambiental</li><li>Dirección de Proyectos de Innovación</li><li>Dirección e Ingeniería de Software</li><li>Ciencias Computacionales y Telecomunicaciones</li>
                                 </ul>
                             </div>
                             <div class="p-5 rounded-2xl bg-gray-50 dark:bg-[#1A1A1A] border border-gray-100 dark:border-gray-800 h-full">
@@ -495,20 +473,7 @@
                                     <div class="w-2 h-2 rounded-full bg-utel"></div><h4 class="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Económico Administrativo</h4>
                                 </div>
                                 <ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1.5 pl-4 list-disc marker:text-gray-300 dark:marker:text-gray-700 grid grid-cols-1 sm:grid-cols-2 gap-x-2">
-                                    <li>Admin. de Negocios Deportivos</li>
-                                    <li>Mercadotecnia Digital y E-Commerce</li>
-                                    <li>Admin. de Recursos Humanos</li>
-                                    <li>Admin. de Tecnologías de la Info.</li>
-                                    <li>Dirección de Ventas</li>
-                                    <li>Admin. de Instituciones Educativas</li>
-                                    <li>Admin. en Mercadotecnia Estratégica</li>
-                                    <li>Administración Pública</li>
-                                    <li>Coaching Integral y Organizacional</li>
-                                    <li>Comercio Internacional</li>
-                                    <li>Dirección Negocios Alimentos y Bebidas</li>
-                                    <li>Gestión Estratégica del Capital Humano</li>
-                                    <li>Gestión Organizacional Positiva</li>
-                                    <li>Finanzas</li>
+                                    <li>Admin. de Negocios Deportivos</li><li>Mercadotecnia Digital y E-Commerce</li><li>Admin. de Recursos Humanos</li><li>Admin. de Tecnologías de la Info.</li><li>Dirección de Ventas</li><li>Admin. de Instituciones Educativas</li><li>Admin. en Mercadotecnia Estratégica</li><li>Administración Pública</li><li>Coaching Integral y Organizacional</li><li>Comercio Internacional</li><li>Dirección Negocios Alimentos y Bebidas</li><li>Gestión Estratégica del Capital Humano</li><li>Gestión Organizacional Positiva</li><li>Finanzas</li>
                                 </ul>
                             </div>
                             <div class="p-5 rounded-2xl bg-gray-50 dark:bg-[#1A1A1A] border border-gray-100 dark:border-gray-800 h-full">
@@ -516,15 +481,7 @@
                                     <div class="w-2 h-2 rounded-full bg-utel"></div><h4 class="font-bold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Ciencias Sociales y Humanidades</h4>
                                 </div>
                                 <ul class="text-xs text-gray-600 dark:text-gray-400 space-y-1.5 pl-4 list-disc marker:text-gray-300 dark:marker:text-gray-700 grid grid-cols-1 sm:grid-cols-2 gap-x-2">
-                                    <li>Derecho Procesal Constitucional</li>
-                                    <li>Derecho Procesal Penal</li>
-                                    <li>Derecho Procesal y Juicios Orales</li>
-                                    <li>Derechos Humanos</li>
-                                    <li>Desarrollo Sustentable y Gestión Ambiental</li>
-                                    <li>Educación y Docencia</li>
-                                    <li>Mindfulness (Conciencia Plena Aplicada)</li>
-                                    <li>Responsabilidad Social</li>
-                                    <li>Tecnología Educativa</li>
+                                    <li>Derecho Procesal Constitucional</li><li>Derecho Procesal Penal</li><li>Derecho Procesal y Juicios Orales</li><li>Derechos Humanos</li><li>Desarrollo Sustentable y Gestión Ambiental</li><li>Educación y Docencia</li><li>Mindfulness (Conciencia Plena Aplicada)</li><li>Responsabilidad Social</li><li>Tecnología Educativa</li>
                                 </ul>
                             </div>
                         </div>
@@ -539,129 +496,74 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // AOS configurado para animar siempre al scroll
-        AOS.init({ 
-            once: false, 
-            mirror: true, 
-            offset: 50,
-            duration: 800
-        });
+        AOS.init({ once: false, mirror: true, offset: 50, duration: 800 });
 
-        // --- LÓGICA DEL MODO OSCURO ---
         const themeToggleBtn = document.getElementById('theme-toggle');
         const darkIcon = document.getElementById('theme-toggle-dark-icon');
         const lightIcon = document.getElementById('theme-toggle-light-icon');
 
         function updateIcons() {
             if (document.documentElement.classList.contains('dark')) {
-                darkIcon.classList.add('hidden');
-                lightIcon.classList.remove('hidden');
+                darkIcon.classList.add('hidden'); lightIcon.classList.remove('hidden');
             } else {
-                lightIcon.classList.add('hidden');
-                darkIcon.classList.remove('hidden');
+                lightIcon.classList.add('hidden'); darkIcon.classList.remove('hidden');
             }
         }
-
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
+        } else { document.documentElement.classList.remove('dark'); }
         updateIcons();
 
         themeToggleBtn.addEventListener('click', function() {
             document.documentElement.classList.toggle('dark');
-            if (document.documentElement.classList.contains('dark')) {
-                localStorage.setItem('color-theme', 'dark');
-            } else {
-                localStorage.setItem('color-theme', 'light');
-            }
+            localStorage.setItem('color-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
             updateIcons();
         });
 
-        // --- LÓGICA DE MODALES DE OFERTA ACADÉMICA ---
         function configurarModal(btnAbrirId, modalId, btnCerrarId, fondoId, panelId) {
-            const btnAbrir = document.getElementById(btnAbrirId);
-            const modal = document.getElementById(modalId);
-            const btnCerrar = document.getElementById(btnCerrarId);
-            const fondo = document.getElementById(fondoId);
+            const btnAbrir = document.getElementById(btnAbrirId); const modal = document.getElementById(modalId);
+            const btnCerrar = document.getElementById(btnCerrarId); const fondo = document.getElementById(fondoId);
             const panel = document.getElementById(panelId);
-
             if(!btnAbrir || !modal) return;
-
-            function abrir() {
-                modal.classList.remove('hidden');
-                setTimeout(() => {
-                    fondo.classList.remove('opacity-0');
-                    panel.classList.remove('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
-                }, 10);
-            }
-
-            function cerrar() {
-                fondo.classList.add('opacity-0');
-                panel.classList.add('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
-                setTimeout(() => {
-                    modal.classList.add('hidden');
-                }, 300);
-            }
-
-            btnAbrir.addEventListener('click', abrir);
-            btnCerrar.addEventListener('click', cerrar);
-            fondo.addEventListener('click', cerrar);
+            function abrir() { modal.classList.remove('hidden'); setTimeout(() => { fondo.classList.remove('opacity-0'); panel.classList.remove('opacity-0', 'translate-y-4'); }, 10); }
+            function cerrar() { fondo.classList.add('opacity-0'); panel.classList.add('opacity-0', 'translate-y-4'); setTimeout(() => { modal.classList.add('hidden'); }, 300); }
+            btnAbrir.addEventListener('click', abrir); btnCerrar.addEventListener('click', cerrar); fondo.addEventListener('click', cerrar);
         }
-
         configurarModal('btn-open-licenciaturas', 'modal-licenciaturas', 'btn-close-licenciaturas', 'backdrop-licenciaturas', 'panel-licenciaturas');
         configurarModal('btn-open-maestrias', 'modal-maestrias', 'btn-close-maestrias', 'backdrop-maestrias', 'panel-maestrias');
 
-        // --- LÓGICA DE TEXTURA DINÁMICA ---
         const cards = document.querySelectorAll('.card-dynamic');
         cards.forEach(card => {
             card.addEventListener('mousemove', e => {
                 const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                card.style.setProperty('--x', `${x}px`);
-                card.style.setProperty('--y', `${y}px`);
+                card.style.setProperty('--x', `${e.clientX - rect.left}px`);
+                card.style.setProperty('--y', `${e.clientY - rect.top}px`);
             });
         });
 
-        // --- LÓGICA DE CAPTURA DE DATOS Y REDIRECCIÓN WHATSAPP ---
         function abrirModalInscripcion() {
             const modal = document.getElementById('modal-inscripcion');
             const fondo = document.getElementById('backdrop-inscripcion');
             const panel = document.getElementById('panel-inscripcion');
-            
             modal.classList.remove('hidden');
-            setTimeout(() => {
-                fondo.classList.remove('opacity-0');
-                panel.classList.remove('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
-            }, 10);
+            setTimeout(() => { fondo.classList.remove('opacity-0'); panel.classList.remove('opacity-0', 'translate-y-4'); }, 10);
         }
 
         function cerrarModalInscripcion() {
             const modal = document.getElementById('modal-inscripcion');
             const fondo = document.getElementById('backdrop-inscripcion');
             const panel = document.getElementById('panel-inscripcion');
-            
-            fondo.classList.add('opacity-0');
-            panel.classList.add('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-            }, 300);
+            fondo.classList.add('opacity-0'); panel.classList.add('opacity-0', 'translate-y-4');
+            setTimeout(() => { modal.classList.add('hidden'); }, 300);
         }
 
-        // Delegación de eventos para los botones de inscripción
         document.body.addEventListener('click', function(e) {
             if (e.target.closest('.trigger-inscripcion')) {
-                
-                // --- SOLUCIÓN AL ERROR DE VENTANAS APILADAS ---
-                // Cerrar forzosamente los modales académicos si están abiertos y resetear su opacidad
                 ['licenciaturas', 'maestrias'].forEach(id => {
                     document.getElementById('modal-' + id).classList.add('hidden');
                     document.getElementById('backdrop-' + id).classList.add('opacity-0');
-                    document.getElementById('panel-' + id).classList.add('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
+                    document.getElementById('panel-' + id).classList.add('opacity-0', 'translate-y-4');
                 });
-
                 abrirModalInscripcion();
             }
         });
@@ -669,15 +571,13 @@
         document.getElementById('btn-close-inscripcion').addEventListener('click', cerrarModalInscripcion);
         document.getElementById('backdrop-inscripcion').addEventListener('click', cerrarModalInscripcion);
 
-        // Procesar formulario
         const formInscripcion = document.getElementById('form-inscripcion');
         formInscripcion.addEventListener('submit', function(e) {
             e.preventDefault();
-            
             const nombre = document.getElementById('nombre').value;
             const telefono = document.getElementById('telefono').value;
             const correo = document.getElementById('correo').value;
-
+            
             // ==========================================
             // ATENCIÓN ERICK: CAMBIA ESTE NÚMERO
             // Pon tu número real con el código 52 (ej. 525512345678)
@@ -685,14 +585,10 @@
             const numeroWhatsapp = "525500000000"; 
             
             const mensaje = `Hola Erick, quiero iniciar mi inscripción. Mis datos son:%0A%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Correo:* ${correo}%0A%0A¡Quedo a la espera de tu mensaje para mi matrícula!`;
-            
-            const url = `https://api.whatsapp.com/send?phone=${numeroWhatsapp}&text=${mensaje}`;
-            window.open(url, '_blank');
-            
+            window.open(`https://api.whatsapp.com/send?phone=${numeroWhatsapp}&text=${mensaje}`, '_blank');
             cerrarModalInscripcion();
             formInscripcion.reset();
         });
-
     </script>
 </body>
 </html>
